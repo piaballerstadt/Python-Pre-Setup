@@ -11,9 +11,9 @@ Download the script files, customize them to fit your needs and provide them to 
 
 There are three script files:
 
-1. **Setup.cmd**:This is what your user will run. It only starts InstallSetup.ps1 with some arguments. In most cases, you just have to customize these arguments in this file to your needs, which is very self-explaining.
+1. **Setup.cmd**:This is what your user will run. It only starts *InstallSetup.ps1* with some arguments. In most cases, you just have to customize these arguments in this file to your needs, which is very self-explaining.
 
-2. **InstallSetup.ps1**: You don't have to change anything in this file. This file is where the magic happens. It downloads and installs Python, set the %PATH% Environment Variable and so on.
+2. **InstallSetup.ps1**: You don't have to change anything in this file. This file is where the magic happens. It downloads and installs Python, set the `%PATH%` Environment Variable and so on.
 
 3. **post_install_script.pyw**: This is a sample script. You may use your own one. It will run after the Python installation has finished.
 
@@ -21,7 +21,7 @@ There are three script files:
 
 A simple sample is provided with the three script files. Just copy them and provide them to your user.
 
-The way it is configured by default, you won't see anything when running it. It hides every output and window, so you won't get any user feedback when Python has been installed. Actually, you have to check the installation manually or check whether or not the post_install_script has been run, if you want to verify if everything went right. You can change this behaviour, if you like.
+The way it is configured by default, you won't see anything when running it. It hides every output and window, so you won't get any user feedback when Python has been installed. Actually, you have to check the installation manually or check whether or not the Post-Install-Script has been run, if you want to verify if everything went right. You can change this behaviour, if you like.
 
 To customize the experience, start with the *Setup.cmd*.
 
@@ -29,13 +29,13 @@ To customize the experience, start with the *Setup.cmd*.
 
 Call the **InstallerScript.ps1** Script using these parameters:
 
-* **-Version**: Python Version you want to install. Please make sure to include a full version number like '3.6.4' or '2.7.14'. Something like '2.7' propably won't work!
+* **-Version**: Python Version you want to install. Please make sure to include a full version number like `3.6.4` or `2.7.14`. Something like '2.7' propably won't work!
 
-* **-Arch**: Specify if you want to install 32 bit or 64 bit Python. Just set it to '32' or '64'.
+* **-Arch**: Specify if you want to install 32 bit or 64 bit Python. Just set it to `32` or `64`.
 
 * **PostInstallScript**: Filename of a Pythonscript that will run if Python has been installed.
 
-* **Hidden**: Hide any output or window from user. This is used to not distract your user, but it is less informative! To hide, set this to '"Hide"' (default), to disable hiding, set this to anything but '"Hide"'.
+* **Hidden**: Hide any output or window from user. This is used to not distract your user, but it is less informative! To hide, set this to `"Hide"` (default), to disable hiding, set this to anything but `"Hide"`.
 
 ### Post Install Script
 
@@ -45,8 +45,8 @@ This script will be run after Python has been installed on the computer and obvi
 
 You propably don't want to change much in this file. However, some details are hidden in this code and not customizable yet, so for some special usages, you have to dig into this code - but I promise, it will be easy.
 
-* **Add/Remove custom python modules**: Each Python installation will include some modules by default. These default modules can be customized by scrolling near the bottom of the file and editing the '$modules'-Array, which you can find easily.
-* **Don't hide the output**: Usually, you should be able to disable hiding by providing a '-Hide' Paramter in your 'Setup.cmd'. If this doesn't work, you can go to the beginning of the InstallerScript just below the line '#requires -version 2.0'. In the following *param*-Block, set *[string]$Hidden* to ""
+* **Add/Remove custom python modules**: Each Python installation will include some modules by default. These default modules can be customized by scrolling near the bottom of the file and editing the `$modules`-Array, which you can find easily.
+* **Don't hide the output**: Usually, you should be able to disable hiding by providing a `-Hide` Paramter in your `Setup.cmd`. If this doesn't work, you can go to the beginning of the InstallerScript just below the line `#requires -version 2.0`. In the following *param*-Block, set `[string]$Hidden` to ""
 
 ### More
 
@@ -67,13 +67,13 @@ These are some basic usage samples. You should be able to handle most task just 
 
 Micha Grandel – [@michagrandel](https://twitter.com/michagrandel) – talk@michagrandel.com
 
-Distributed under the MIT license. See [https://github.com/michagrandel/Python-Pre-Setup/blob/master/LICENSE](LICENSE) for more information.
+Distributed under the MIT license. See [LICENSE](LICENSE) for more information.
 
-[https://github.com/michagrandel/Python-Pre-Setup](github.com/michagrandel/)
+[Github/MichaGrandel](https://github.com/michagrandel/)
 
 ## Contributing
 
-1. Fork it (<https://github.com/michagrandel/Python-Pre-Setup/fork>)
+1. [Fork it](https://github.com/michagrandel/Python-Pre-Setup/fork)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
