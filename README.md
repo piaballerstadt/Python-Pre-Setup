@@ -54,7 +54,7 @@ These are some basic usage samples. You should be able to handle most task just 
 
 ## Release History
 
-- 1.0.0
+- **1.0.0**
 	- Compatible with Windows 7 or newer (Powershell 2.0)
 	- Download and install Python from official sources
 	- Easily customize Python Version
@@ -65,10 +65,7 @@ These are some basic usage samples. You should be able to handle most task just 
 
 ## Meta
 
-Micha Grandel
-- [![](https://i2.wp.com/hyperap.com/wp-content/uploads/2017/11/twitter-logo-silhouette.png) @michagrandel](https://twitter.com/michagrandel)
-- [![](http://schaufenster.diepresse.com/img/logo-instagram.png) @michagrandel](https://www.instagram.com/michagrandel/)
-- [![](http://www.esffl.pt/home/images/stories/gmail-icon.png) talk@michagrandel.com](mailto:talk@michagrandel.com)
+Micha Grandel - [![](https://i2.wp.com/hyperap.com/wp-content/uploads/2017/11/twitter-logo-silhouette.png) @michagrandel](https://twitter.com/michagrandel) - [![](http://schaufenster.diepresse.com/img/logo-instagram.png) @michagrandel](https://www.instagram.com/michagrandel/) - [![](http://www.esffl.pt/home/images/stories/gmail-icon.png) talk@michagrandel.com](mailto:talk@michagrandel.com)
 
 Distributed under the MIT license. See [LICENSE](LICENSE) for more information.
 
